@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/peed"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="308dp"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/PeedPic"
+                android:layout_width="306dp"
+                android:layout_height="306dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/PeedPicAdd"
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:backgroundTint="#00FD897F"
+                android:text="+"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/PeedLink"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+
+            android:hint="링크첨부"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/PeedTem"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="온도"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/PeedWea"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="날씨"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/PeedSty"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="스타일"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/PeedAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:backgroundTint="#00A23737"
+            android:text="추가하기" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
