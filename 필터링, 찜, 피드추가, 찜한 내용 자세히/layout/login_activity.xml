@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start_Main"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:text="오늘 나의 옷은?"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="282dp"
+                android:layout_height="53dp"
+                android:background="#E6E4E4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="아이디를 입력하세요"
+                    android:inputType="text"
+                    android:onClick="idTx" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="282dp"
+                android:layout_height="53dp"
+                android:background="#E6E4E4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="비밀번호를 입력하세요"
+                    android:inputType="text"
+                    android:onClick="idTx" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/regiBn"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#626060"
+                android:onClick="registerBn"
+                android:text="회원가입" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:onClick="startCheckBn"
+                android:backgroundTint="#626060"
+                android:text="확인" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/startHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:onClick="loginHelp"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
