@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/peed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/image_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+        </FrameLayout>
+        <EditText
+            android:id="@+id/imageName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="사진 이름 (선택)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/PeedLink"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="링크첨부"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/PeedTem"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="온도"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/PeedWea"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="날씨"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/clothesNm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="옷 이름"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/PeedSty"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="스타일"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/PeedAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:backgroundTint="#00A23737"
+            android:text="추가하기" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
